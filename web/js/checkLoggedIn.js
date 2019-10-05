@@ -23,6 +23,6 @@ async function sendRequest(url,data){
 let check = sendRequest("./backend/checkSession.php", {});
 check.then(function(data){
     if (data['error'] != 0){
-        window.location.assign("/apollo%20finance/index.html")
+        window.location.assign("/index.html")
     }
 })
